@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Page Example</title>
+</head>
+<body>
+  <h1>Download This Page</h1>
+  <button id="downloadButton">Download This Page</button>
+
+  <script>
+    document.getElementById('downloadButton').addEventListener('click', function() {
+      // Create a Blob with the current HTML content
+      const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      
+      // Create a temporary link element
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'page.html'; // Name of the file to be downloaded
+      
+      // Append the link to the body (not visible) and trigger a click
+      document.body.appendChild(a);
+      a.click();
+      
+      // Clean up
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
