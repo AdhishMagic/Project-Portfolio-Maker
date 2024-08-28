@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+</head>
+<body>
+  <div id="55"></div>
+  <nav class="header" ><!--Header of the page-->
+    <h1 id="t1" style="display: inline; font-size: 40px; margin-top: 20px;">Adhish</h1>
+    <ul style="display: inline; ">
+      <a href="#t7" style="color: black; text-decoration: none; "><li id="about">about</li></a>
+      <a href="#t15" style="color: black; text-decoration: none; "><li id="skills">skills</h1></a>
+      <a href="#t16" style="color: black; text-decoration: none; "><li id="project">project</li></a>
+      <a href="#t19" style="color: black; text-decoration: none; "><li id="contact">contact</li></a>
+    </ul>
+  </nav><!--profile-->
+    
+  <div id="t3">
+    <h1 id="t6">HI, I'm <span id="t2"></span></h1>
+    <h1 > An <span id="t4"></span></h1>
+    <img src="Unknown_person.jpg" id="t5" alt="profile-picture">
+  </div>
+  <div id="t7"><!--About -->
+    <p>Got to know more</p>
+    <h1>About me</h1>
+  </div>
+  <div id="t8">
+    <h2 id="t9" style="display: inline; text-align: center;">Educational Experience<br><br><span id="t11" style="text-align: left;"></span></h2>
+    
+    <h2 id="t10" style="display: inline; text-align: center;">Educational Qualification<br><br><span id="t12" style="text-align: left;"></span></h2>
+
+  </div>
+<div >
+  <p id="t13"></p>
+</div><br><br><br><br><br><br><br>
+<div id="t14"> <!--skills-->
+  <p>Explore my</p>
+  <h1 id="t15">Skills</h1><br><br>
+  <ul id="t26" style="text-align: left; padding-left: 175px;"></ul>
+</div><br><br><br><br><br><br><br>
+<div id="t16"><!--projects-->
+    <p>Browse my Recent</p>
+    <h1 id="t17">Projects</h1><br><br>
+    <ul id="t27"></ul>
+  </div><br><br><br><br><br>
+  <div id="t18"><!--Contact-->
+    <h1 id="t19">Contact me</h1>
+    <h2 id="t29"></h2>
+   <div id="t20">
+    <div>
+    <img id="t25" src="number.png" alt="number"><p id="numb"></p></div>
+    <div><img id="t21" src="location.jpg" alt="location"><p id="loct"></p></div>
+    </div>
+    <div id="t28">
+    <div><img id="t22" src="linkedin.png" alt="linkedin"><p id="link"></p></div>
+    <div><img id="t23" src="githubb.jpg" alt="github"><p id="gith"></p></div>
+    <div><img id="t24" src="gmail.png" alt="gmail"><p id="mail"></p></div>
+    </div>
+  </div><br><br><br><br><br>
+  <style>
+    html{
+    scroll-behavior: smooth;
+    font-size: medium;
+}
+
+#t2{
+    display: inline;
+}
+#t5{
+    display: block;
+    border-radius: 50%;
+    width: 330px;
+    height: 330px;
+    position: absolute;
+    top: 140px;
+    right: 210px;
+    filter: drop-shadow(1px 1px 20px GREY);
+   
+
+
+}
+#t5:hover{
+    filter: drop-shadow(1px 1px 20px black);
+}
+.header{
+    top: 0px;
+    padding-top: 8px;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+}
+    
+#t6{
+    margin-left: 50px;
+}
+#t3{
+    width: 70%;
+    height: 400px;
+    margin-top: 140px;
+    margin-left: 200px;
+    padding: 30px;
+    
+}
+#t4{
+    display: inline;
+}
+#about,#skills,#project,#contact{
+    display: inline;
+    font-size: xx-large;
+    padding-right: 50px;
+    cursor: pointer;
+
+}
+#about:hover,#skills:hover,#project:hover,#contact:hover{
+   text-decoration: underline;
+}
+#t7{
+    text-align: center;
+   padding: 20px;
+}
+#t8{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+#t9{
+    display: flex;
+    justify-content: space-evenly;
+    border: 10px solid black;
+    margin-left: 100px;
+    margin-right: 60px;
+    padding: 30px;
+    border-radius: 50px;
+}
+#t10{
+    display: flex;
+    justify-content: space-evenly;
+    border: 10px solid black;
+    margin-left: 70px;
+    margin-right: 130px;
+    padding: 45px;
+    border-radius: 50px;
+}
+#t13{
+    margin: 200px;
+    margin-top: 50px;
+}
+#t14{
+    text-align: center;
+}
+#t16{
+    text-align: center;
+}
+#t19{
+    text-align: center;
+}
+#t20{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+
+}
+#t21{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+#t22{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+#t23{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+#t24{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#t25{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+#t28{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    text-align: left;
+
+}
+#t26{
+    border: 10px solid black;
+    border-radius: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 45px;
+    text-decoration: none;
+    font-size: large;
+
+}
+#t27{
+    border: 10px solid black;
+    border-radius: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 45px;
+    text-decoration: none;
+    font-size: large;
+
+}
+
+
+  </style>
+  <script>
+ window.onload = function() {
+            const skillList = document.getElementById('t26');
+            const projectList = document.getElementById('t27');
+            const skills = JSON.parse(localStorage.getItem('userSkills')) || [];
+            const projects = JSON.parse(localStorage.getItem('userProjects')) || [];
+
+            // Display Skills
+            if (skills.length === 0) {
+                skillList.innerHTML = '<li>No skills entered.</li>';
+            } else {
+                skills.forEach(skill => {
+                    const li = document.createElement('li');
+                    li.textContent = skill;
+                    skillList.appendChild(li);
+                });
+            }
+
+            // Display Projects
+            if (projects.length === 0) {
+                projectList.innerHTML = '<li>No projects entered.</li>';
+            } else {
+                projects.forEach(project => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${project.name}</strong>: ${project.description}`;
+                    projectList.appendChild(li);
+                });
+            }
+
+            // Optional: Clear the local storage after displaying
+            localStorage.removeItem('userSkills');
+            localStorage.removeItem('userProjects');
+        }
+document.getElementById('t2').innerHTML = localStorage.getItem("passValue");
+document.getElementById('t1').innerHTML = localStorage.getItem("passValue");
+document.getElementById('t4').innerHTML = localStorage.getItem("passValue2");
+document.getElementById('t11').innerHTML = localStorage.getItem("passValue3");
+document.getElementById('t12').innerHTML = localStorage.getItem("passValue4");
+document.getElementById('t13').innerHTML = localStorage.getItem("passValue5");
+document.getElementById('numb').innerHTML = localStorage.getItem("passValue6");
+document.getElementById('loct').innerHTML = localStorage.getItem("passValue7");
+document.getElementById('link').innerHTML = localStorage.getItem("passValue8");
+document.getElementById('mail').innerHTML = localStorage.getItem("passValue9");
+document.getElementById('gith').innerHTML = localStorage.getItem("passValue10");
+
+//image
+const imageDataUrl = localStorage.getItem('imageDataUrl');
+
+// Set the image source to the image data URL
+document.getElementById('t5').src = imageDataUrl;
+
+
+  </script>
+
+</body>
+</html>
